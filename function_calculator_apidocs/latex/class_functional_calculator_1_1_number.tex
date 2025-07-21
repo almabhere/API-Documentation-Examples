@@ -1,0 +1,46 @@
+\doxysection{Functional\+Calculator\+::Number Class Reference}
+\hypertarget{class_functional_calculator_1_1_number}{}\label{class_functional_calculator_1_1_number}\index{FunctionalCalculator::Number@{FunctionalCalculator::Number}}
+Inheritance diagram for Functional\+Calculator\+::Number\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_functional_calculator_1_1_number}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::pair$<$ double, double $>$ \mbox{\hyperlink{class_functional_calculator_1_1_number_ad291ce4c49cbeb2bc5c6aa9a515567ec}{get}} () const
+\item 
+virtual std\+::string \mbox{\hyperlink{class_functional_calculator_1_1_number_a65282cc2eac0a62b2bb5de83752d5912}{print}} (bool use\+Parentheses=false) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class from which numbers should derive. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_functional_calculator_1_1_number_ad291ce4c49cbeb2bc5c6aa9a515567ec}\index{FunctionalCalculator::Number@{FunctionalCalculator::Number}!get@{get}}
+\index{get@{get}!FunctionalCalculator::Number@{FunctionalCalculator::Number}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1_number_ad291ce4c49cbeb2bc5c6aa9a515567ec} 
+virtual std\+::pair$<$ double, double $>$ Functional\+Calculator\+::\+Number\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+A class should have this virtual function implemented in order to derive from the \doxylink{class_functional_calculator_1_1_number}{Number} class. \doxylink{class_this}{This} method returns a complex number as a pair of double-\/precision real numbers a + bi. 
+
+Reimplemented in \mbox{\hyperlink{class_functional_calculator_1_1_rational_a564c8ef0dad111e11bfdedf2e7b04414}{Functional\+Calculator\+::\+Rational}}.
+
+\Hypertarget{class_functional_calculator_1_1_number_a65282cc2eac0a62b2bb5de83752d5912}\index{FunctionalCalculator::Number@{FunctionalCalculator::Number}!print@{print}}
+\index{print@{print}!FunctionalCalculator::Number@{FunctionalCalculator::Number}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1_number_a65282cc2eac0a62b2bb5de83752d5912} 
+virtual std\+::string Functional\+Calculator\+::\+Number\+::print (\begin{DoxyParamCaption}\item[{bool}]{use\+Parentheses}{ = {\ttfamily false}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+A class should have this virtual function implemented in order to derive from the \doxylink{class_functional_calculator_1_1_number}{Number} class. \doxylink{class_this}{This} method prints the number as a string, with an optional parameter that indicates whether the number should be enclosed in parentheses. By default this parameter is off. 
+
+Reimplemented in \mbox{\hyperlink{class_functional_calculator_1_1_rational_aea506e622601a02ec46d92d8f88ae34d}{Functional\+Calculator\+::\+Rational}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tech Writing Practice/\+API-\/\+Documentation-\/\+Examples/function\+\_\+calculator/number.\+h\end{DoxyCompactItemize}
