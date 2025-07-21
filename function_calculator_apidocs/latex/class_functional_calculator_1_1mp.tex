@@ -1,0 +1,244 @@
+\doxysection{Functional\+Calculator\+::mp Class Reference}
+\hypertarget{class_functional_calculator_1_1mp}{}\label{class_functional_calculator_1_1mp}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp_a2084f36a11ef9819d7db0f7bcafb7831}{mp}} (int value=0)
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp_aef8fc69d3e86d3c0f6503fa678514077}{mp}} (const long long \&value)
+\item 
+int \mbox{\hyperlink{class_functional_calculator_1_1mp_a09f759dc9cf863b2379f71be068a9699}{get\+Digit}} (int i) const
+\item 
+void \mbox{\hyperlink{class_functional_calculator_1_1mp_ac5e12927c1fa22d372e5adc4f2920aea}{set\+Digit}} (int i, int val)
+\item 
+int \mbox{\hyperlink{class_functional_calculator_1_1mp_a9fc4798f0c81e271573e3a39a596b451}{num\+Digits}} () const
+\item 
+int \mbox{\hyperlink{class_functional_calculator_1_1mp_af293d93ca965f48f582ad0b2dc2e9168}{to\+Int}} () const
+\item 
+std\+::pair$<$ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}, \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} $>$ \mbox{\hyperlink{class_functional_calculator_1_1mp_a80e57d1784717fb47029fa445683993f}{separate\+Squared\+Part}} () const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_ab078427dc777ca5d0d95cda720821235}{operator+}} () const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_aeb96fa9279df3e5378bdd278ae36d150}{operator-\/}} () const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_aebacdde757b4c9a5be6c93783552c721}{operator+}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_a9a676afba74bbfc1582c7417ca25aefe}{operator-\/}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_a481e835befcd0ad2fffc2fde63f8723d}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_a870c012057fc2a87c984d0619d69697f}{operator/}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_ac3158d512449ed423efd6fccc501e982}{operator\%}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_a06d42771552c5b6a706e4b948cd3019d}{abs}} () const
+\item 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_a0cee5017bddc1ad47da0a9cac11fd785}{pow}} (int p) const
+\item 
+bool \mbox{\hyperlink{class_functional_calculator_1_1mp_a371108ce14e8a61bbc7ac248575a686c}{operator==}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{class_functional_calculator_1_1mp_ae8eb87a987466d7e9434679058cddd33}{operator!=}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{class_functional_calculator_1_1mp_af8647980ca5504675233c6761bc15cb7}{operator$<$}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{class_functional_calculator_1_1mp_ae65082fa894cafa014797551ebbaf80b}{operator$>$}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{class_functional_calculator_1_1mp_a9c5ff19cae83473e6ac0ab7f7e7e2f9d}{operator$<$=}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{class_functional_calculator_1_1mp_af0423d8e58c0d13e55fbfd226e1f89ee}{operator$>$=}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&rhs) const
+\item 
+std\+::map$<$ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}, int $>$ \mbox{\hyperlink{class_functional_calculator_1_1mp_a4ad8db494aa639aee21b8194210aaf3c}{prime\+Factorization}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_a39d3c7b22cabd6cac6ca85b5dcc2e87b}{gcd}} (const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&aa, const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&bb)
+\item 
+static \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_a7ce56e765be96131751680732586b524}{gcd}} (const std\+::vector$<$ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} $>$ \&arguments)
+\item 
+static \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \mbox{\hyperlink{class_functional_calculator_1_1mp_a01be48fa3d25bbd16b210739f64ed23b}{binomial\+Coeff}} (int n, int k)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_functional_calculator_1_1mp_a3e9ad6784595f085286feb7870c836c5}{operator$<$$<$}} (std\+::ostream \&strm, const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&mp\+In)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+multiple-\/precision integer. A multiple-\/precision integer is useful for avoiding overflow when the integer gets too large and can display numbers that are much larger than typical integers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_functional_calculator_1_1mp_a2084f36a11ef9819d7db0f7bcafb7831}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!mp@{mp}}
+\index{mp@{mp}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{mp()}{mp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a2084f36a11ef9819d7db0f7bcafb7831} 
+Functional\+Calculator\+::mp\+::mp (\begin{DoxyParamCaption}\item[{int}]{value}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\doxylink{class_this}{This} is the default constructor. It initializes the mp to a given integer value, which is 0 by default. \Hypertarget{class_functional_calculator_1_1mp_aef8fc69d3e86d3c0f6503fa678514077}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!mp@{mp}}
+\index{mp@{mp}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{mp()}{mp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_aef8fc69d3e86d3c0f6503fa678514077} 
+Functional\+Calculator\+::mp\+::mp (\begin{DoxyParamCaption}\item[{const long long \&}]{value}{}\end{DoxyParamCaption})}
+
+\doxylink{class_this}{This} is a constructor. It initializes the mp to a given value. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_functional_calculator_1_1mp_a06d42771552c5b6a706e4b948cd3019d}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!abs@{abs}}
+\index{abs@{abs}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{abs()}{abs()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a06d42771552c5b6a706e4b948cd3019d} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::abs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the absolute value of the mp. \Hypertarget{class_functional_calculator_1_1mp_a01be48fa3d25bbd16b210739f64ed23b}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!binomialCoeff@{binomialCoeff}}
+\index{binomialCoeff@{binomialCoeff}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{binomialCoeff()}{binomialCoeff()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a01be48fa3d25bbd16b210739f64ed23b} 
+static \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::binomial\+Coeff (\begin{DoxyParamCaption}\item[{int}]{n}{, }\item[{int}]{k}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{class_this}{This} method returns the binomial coefficient, "{}n choose k"{}. \doxylink{class_this}{This} is the number of ways k items can be chosen from n total. It is used to count combinations. If n is less than or equal to 0, this method returns 0. If k is less than or equal to 0 or greater than n, this method returns 0. For integers k between 0 and n, this equals n! / ((n -\/ k)! \texorpdfstring{$\ast$}{*} k!) \Hypertarget{class_functional_calculator_1_1mp_a39d3c7b22cabd6cac6ca85b5dcc2e87b}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!gcd@{gcd}}
+\index{gcd@{gcd}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{gcd()}{gcd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a39d3c7b22cabd6cac6ca85b5dcc2e87b} 
+static \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::gcd (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{aa}{, }\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{bb}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{class_this}{This} returns the greatest common divisor of two mp numbers aa and bb. \Hypertarget{class_functional_calculator_1_1mp_a7ce56e765be96131751680732586b524}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!gcd@{gcd}}
+\index{gcd@{gcd}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{gcd()}{gcd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a7ce56e765be96131751680732586b524} 
+static \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::gcd (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} $>$ \&}]{arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{class_this}{This} method returns the greatest common divisor of a collection of mp numbers. \Hypertarget{class_functional_calculator_1_1mp_a09f759dc9cf863b2379f71be068a9699}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!getDigit@{getDigit}}
+\index{getDigit@{getDigit}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{getDigit()}{getDigit()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a09f759dc9cf863b2379f71be068a9699} 
+int Functional\+Calculator\+::mp\+::get\+Digit (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the i\textquotesingle{}th decimal digit of the mp number. The method throws an exception if i is negative. \Hypertarget{class_functional_calculator_1_1mp_a9fc4798f0c81e271573e3a39a596b451}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!numDigits@{numDigits}}
+\index{numDigits@{numDigits}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{numDigits()}{numDigits()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a9fc4798f0c81e271573e3a39a596b451} 
+int Functional\+Calculator\+::mp\+::num\+Digits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the number of decimal digits in the mp number. \Hypertarget{class_functional_calculator_1_1mp_ae8eb87a987466d7e9434679058cddd33}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_ae8eb87a987466d7e9434679058cddd33} 
+bool Functional\+Calculator\+::mp\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns true if and only if the two numbers are not equal. \Hypertarget{class_functional_calculator_1_1mp_ac3158d512449ed423efd6fccc501e982}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_ac3158d512449ed423efd6fccc501e982} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::operator\% (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the remainder of the division that takes place when you divide this number by rhs. It throws an exception if rhs is zero. \Hypertarget{class_functional_calculator_1_1mp_a481e835befcd0ad2fffc2fde63f8723d}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a481e835befcd0ad2fffc2fde63f8723d} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the product of the current number and rhs. \Hypertarget{class_functional_calculator_1_1mp_ab078427dc777ca5d0d95cda720821235}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator+@{operator+}}
+\index{operator+@{operator+}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_ab078427dc777ca5d0d95cda720821235} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::operator+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the number unchanged. \Hypertarget{class_functional_calculator_1_1mp_aebacdde757b4c9a5be6c93783552c721}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator+@{operator+}}
+\index{operator+@{operator+}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_aebacdde757b4c9a5be6c93783552c721} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} mehtod returns the sum of the current number and rhs. \Hypertarget{class_functional_calculator_1_1mp_aeb96fa9279df3e5378bdd278ae36d150}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_aeb96fa9279df3e5378bdd278ae36d150} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::operator-\/ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the negative of the current number. \Hypertarget{class_functional_calculator_1_1mp_a9a676afba74bbfc1582c7417ca25aefe}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a9a676afba74bbfc1582c7417ca25aefe} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the difference of the current number and rhs. That is, rhs subtracted from the current number. \Hypertarget{class_functional_calculator_1_1mp_a870c012057fc2a87c984d0619d69697f}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator/@{operator/}}
+\index{operator/@{operator/}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a870c012057fc2a87c984d0619d69697f} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the quotient of the current number and rhs. That is, the current number divided by rhs. \doxylink{class_this}{This} is integer division, so it does not return any remaining decimal part. Throws an exception of rhs is zero. \Hypertarget{class_functional_calculator_1_1mp_af8647980ca5504675233c6761bc15cb7}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_af8647980ca5504675233c6761bc15cb7} 
+bool Functional\+Calculator\+::mp\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns whether the current number is less than the righthand side. The existence of this method allows mp instances to be keys for maps. \Hypertarget{class_functional_calculator_1_1mp_a9c5ff19cae83473e6ac0ab7f7e7e2f9d}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a9c5ff19cae83473e6ac0ab7f7e7e2f9d} 
+bool Functional\+Calculator\+::mp\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns whether the current number is less than or equal to rhs. \Hypertarget{class_functional_calculator_1_1mp_a371108ce14e8a61bbc7ac248575a686c}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator==@{operator==}}
+\index{operator==@{operator==}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a371108ce14e8a61bbc7ac248575a686c} 
+bool Functional\+Calculator\+::mp\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns true if the current number equals rhs, and it is false otherwise. \Hypertarget{class_functional_calculator_1_1mp_ae65082fa894cafa014797551ebbaf80b}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_ae65082fa894cafa014797551ebbaf80b} 
+bool Functional\+Calculator\+::mp\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns whether the current number is greater than rhs. \Hypertarget{class_functional_calculator_1_1mp_af0423d8e58c0d13e55fbfd226e1f89ee}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_af0423d8e58c0d13e55fbfd226e1f89ee} 
+bool Functional\+Calculator\+::mp\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns whether the current number is greater than or equal to rhs. \Hypertarget{class_functional_calculator_1_1mp_a0cee5017bddc1ad47da0a9cac11fd785}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!pow@{pow}}
+\index{pow@{pow}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{pow()}{pow()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a0cee5017bddc1ad47da0a9cac11fd785} 
+\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} Functional\+Calculator\+::mp\+::pow (\begin{DoxyParamCaption}\item[{int}]{p}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the current number raised to the p\textquotesingle{}th power. The power p must be nonnegative or else the method throws an exception. \Hypertarget{class_functional_calculator_1_1mp_a4ad8db494aa639aee21b8194210aaf3c}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!primeFactorization@{primeFactorization}}
+\index{primeFactorization@{primeFactorization}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{primeFactorization()}{primeFactorization()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a4ad8db494aa639aee21b8194210aaf3c} 
+std\+::map$<$ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}, int $>$ Functional\+Calculator\+::mp\+::prime\+Factorization (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} returns the prime factorization of the number as a map. The keys are the prime factors. The value of a key is the number of occurrences of that prime factor. \Hypertarget{class_functional_calculator_1_1mp_a80e57d1784717fb47029fa445683993f}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!separateSquaredPart@{separateSquaredPart}}
+\index{separateSquaredPart@{separateSquaredPart}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{separateSquaredPart()}{separateSquaredPart()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a80e57d1784717fb47029fa445683993f} 
+std\+::pair$<$ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}, \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} $>$ Functional\+Calculator\+::mp\+::separate\+Squared\+Part (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns \{ a, b \} where a is the maximal number such that this integer == a \texorpdfstring{$\ast$}{*} a \texorpdfstring{$\ast$}{*} b. \Hypertarget{class_functional_calculator_1_1mp_ac5e12927c1fa22d372e5adc4f2920aea}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!setDigit@{setDigit}}
+\index{setDigit@{setDigit}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{setDigit()}{setDigit()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_ac5e12927c1fa22d372e5adc4f2920aea} 
+void Functional\+Calculator\+::mp\+::set\+Digit (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{val}{}\end{DoxyParamCaption})}
+
+\doxylink{class_this}{This} method sets the i\textquotesingle{}th decimal digit of the mp number to a given value. It throws an exception if the value of i is negative. The digit "{}value"{} must be between 0 and 9, inclusive, or else the method throws an exception. \Hypertarget{class_functional_calculator_1_1mp_af293d93ca965f48f582ad0b2dc2e9168}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!toInt@{toInt}}
+\index{toInt@{toInt}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{toInt()}{toInt()}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_af293d93ca965f48f582ad0b2dc2e9168} 
+int Functional\+Calculator\+::mp\+::to\+Int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\doxylink{class_this}{This} method returns the mp number as a plain integer. It does not signal an exception if the mp number is larger than the limit above. Rather, it returns the remainder upon division by limit. 
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_functional_calculator_1_1mp_a3e9ad6784595f085286feb7870c836c5}\index{FunctionalCalculator::mp@{FunctionalCalculator::mp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!FunctionalCalculator::mp@{FunctionalCalculator::mp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_functional_calculator_1_1mp_a3e9ad6784595f085286feb7870c836c5} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{strm}{, }\item[{const \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}} \&}]{mp\+In}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\doxylink{class_this}{This} prints the current number to an output stream. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tech Writing Practice/\+API-\/\+Documentation-\/\+Examples/function\+\_\+calculator/mp\+\_\+integer.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+\doxysection{rational.\+h}
+\hypertarget{rational_8h_source}{}\label{rational_8h_source}\index{Tech Writing Practice/API-\/Documentation-\/Examples/function\_calculator/rational.h@{Tech Writing Practice/API-\/Documentation-\/Examples/function\_calculator/rational.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ \ Copyright\ August\ 2024.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{All\ Rights\ Reserved.*/}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ RATIONAL\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ RATIONAL\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}mp\_integer.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}number.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }FunctionalCalculator}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \textcolor{keywordtype}{bool}\ parenthesesWellFormed(\textcolor{keyword}{const}\ std::string\&\ str,\ \textcolor{keyword}{const}\ std::pair<char,\ char>\&\ leftRight\ =\ \{\ \textcolor{charliteral}{'('},\ \textcolor{charliteral}{')'}\ \});}
+\DoxyCodeLine{00016\ \ \ \textcolor{keywordtype}{void}\ trimParentheses(std::string\&\ str,\ \textcolor{keyword}{const}\ std::pair<char,\ char>\&\ leftRight\ =\ \{\ \textcolor{charliteral}{'('},\ \textcolor{charliteral}{')'}\ \});}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_functional_calculator_1_1_number}{Number}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}\ num\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}\ denom\ =\ 1;}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}(\textcolor{keywordtype}{int}\ nn\ =\ 0,\ \textcolor{keywordtype}{int}\ dd\ =\ 1);}
+\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_adb4b9602ed6698a751eeeb6d81452ef2}{Rational}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}\&\ nn,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}\&\ dd);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_af37f5b8e129d0b9405a4fa797b3d1b15}{Rational}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&);}
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a121d117297d3e113e50bd959ac53832d}{Rational}}(\mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\&)\ noexcept;}
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ operator=(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&);}
+\DoxyCodeLine{00038\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ operator=(\mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\&)\ noexcept;}
+\DoxyCodeLine{00040\ \ \ virtual\ \string~\mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}()\ =\ default;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_aa842de21a08cb9ade8e6571015bd89eb}{denominator}}()\ const;}
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}}\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a328c346279404c95dc8401204487e531}{numerator}}()\ const;}
+\DoxyCodeLine{00047\ \ \ std::pair<\mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}},\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}>\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a5baa3d3ffa4df73e66f6122466192d1d}{separateSquaredPart}}()\ const;}
+\DoxyCodeLine{00049\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\ operator+()\ const;}
+\DoxyCodeLine{00051\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\ operator-\/()\ const;}
+\DoxyCodeLine{00053\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\ operator+(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00055\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\ operator-\/(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00057\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\ operator*(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00059\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\ operator/(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00061\ \ \ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_aae911edc5bb64db0c06cd24ffd916a1b}{pow}}(\textcolor{keywordtype}{int}\ p)\ const;}
+\DoxyCodeLine{00063\ \ \ \textcolor{keywordtype}{bool}\ operator==(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{bool}\ operator!=(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00067\ \ \ \textcolor{keywordtype}{bool}\ operator<(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{bool}\ operator>(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{bool}\ operator<=(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00073\ \ \ \textcolor{keywordtype}{bool}\ operator>=(const\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a443c9cc78a44cfc053086b288fb65264}{Rational}}\&\ rhs)\ const;}
+\DoxyCodeLine{00075\ \ \ std::map<\mbox{\hyperlink{class_functional_calculator_1_1mp}{mp}},\ \textcolor{keywordtype}{int}>\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a89c4e8cd0127ddc00d502d2f8676e352}{primeFactorization}}()\ const;}
+\DoxyCodeLine{00077\ \ \ std::\textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a8562d9e8ad6d9c0282ec76f87b9d135a}{printFactors}}(\textcolor{keywordtype}{bool}\ useParentheses\ =\ false)\ const;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00080\ \ \ virtual\ std::pair<\textcolor{keywordtype}{double},\ \textcolor{keywordtype}{double}>\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a564c8ef0dad111e11bfdedf2e7b04414}{get}}()\ const\ override;}
+\DoxyCodeLine{00082\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_a69432b179a0b22f1052508462b9f689e}{isInt}}()\ const;}
+\DoxyCodeLine{00084\ \ \ virtual\ std::\textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_functional_calculator_1_1_rational_aea506e622601a02ec46d92d8f88ae34d}{print}}(\textcolor{keywordtype}{bool}\ useParentheses\ =\ false)\ const\ override;}
+\DoxyCodeLine{00085\ \};}
+\DoxyCodeLine{00086\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//def\ RATIONAL\_H}}
+
+\end{DoxyCode}
