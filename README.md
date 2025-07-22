@@ -1,4 +1,4 @@
-# **API Documentation Examples by Alma Hall.**
+# **API Documentation Examples by Alma Hall**
 <h1>
   <a href="#"><img alt="Alma" src="Alma.jpg" width="20%"/></a>
 </h1>
